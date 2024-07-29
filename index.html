@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Practico</title>
+    <link rel="stylesheet" href="./CSS/estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Encriptador-Desencriptador de Texto</h1>
+    </header>
+
+    <div class="container">       
+        <div class="encriptar">       
+           <textarea id="texto"
+            class="texto"  cols="30"
+            rows="10" 
+            placeholder="Ingrese el texto aqui"
+            ></textarea>
+            
+        </div>
+        <div class="botones">
+            <button class="btn-encriptar" onclick="encriptar()" type="button">Encriptar</button>
+            <button class="btn-desencriptar" onclick="desencriptar()" type="button">Desencriptar</button>
+            <button class="btn-copia" onclick="copyToClipboard()" type="button">Copiar texto</button>
+        </div>
+        
+        <div id="error-mensaje"></div>
+            <div class="termino">
+                <p class="termino-parrafo">
+                    Ingresar solo minuscula sin acento.
+                </p>
+
+            </div>
+    
+        <div class="encriptado">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+              <img class="encriptado-img" src="./imagenes/buscador.jpg" alt="" id="muñeco">
+                <h2 id="titulo-mensaje">Ningun mensaje fue encontrado</h2>
+                <p id="parrafo"> </p>
+                
+                <!--<textarea name="texto" 
+                class="texto"
+                id="texto"
+                
+                ></textarea>-->
+            </div>
+        </div>   
+         
+    </div>
+    <script src="./js/main.js"></script>
+   
+</body>
+<br>
+<footer class="footer">
+    <p class="pie">Realizado por: Tolay Norberto</p>
+</footer>
+
+</html>
