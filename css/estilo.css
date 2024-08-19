@@ -131,7 +131,7 @@ h1{
 .btn-desencriptar:hover,
 .btn-copia:hover{
     margin: 0.3%;
-    width: 24.5%;
+    width: 15.5%;
     padding: 1.8%;
 
 }
@@ -150,6 +150,12 @@ h1{
     box-shadow: 0px 24px 32px --8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
+.encriptado-img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 10%;    
+}
 .mensaje-encriptado{
     display: flex;   
     padding: 1%;
@@ -163,13 +169,6 @@ h1{
     text-align: center;
 }
 
-.encriptado-img{
-    position: absolute;
-    width: 80%;
-    height: 50%;
-    top: 10%;
-    
-}
 
 #error-mensaje{
     font-family: "Inter";
@@ -192,7 +191,7 @@ h1{
     color: black;
 }
 
-/* Responsive */
+/* Responsive design */
 
 @media (max-width: 1024px) { 
     .container{
@@ -202,17 +201,17 @@ h1{
     }
     .encriptar{
         width: 100%;
+        height: 40%;
     }
     h1{
         font-family: 'Inter';
         width: 80%;
         font-size: 32px;
         color: #000000;
-        text-align: center;
     }
     .texto{
         width: 80%;
-        height: 40%;
+        height: 50%;
         left: 1%;
         top: 5%;
     }
@@ -226,14 +225,13 @@ h1{
         font-size: 16px;
     }
     .botones{
-        width: 80%;
+        width: 50%;
         height: 10%;
         top: 70%;
     }
     .btn-encriptar,
     .btn-desencriptar,
-    .btn-copia{
-        
+    .btn-copia{   
         width: 48%;
         border-radius: 16px;
     }
@@ -241,18 +239,19 @@ h1{
     .btn-desencriptar:hover,
     .btn-copia:hover{
         margin: 0.3%;
-        width: 47.5%;
+        width: 37.5%;
         padding: 1.8%;
     }
     .encriptado{
         width: 60%;
         height: 40%;
         left: 10%;
-        top: 100%;
+        top: 120%;
     }
     .mensaje-encriptado{
         width: 100%;
-        top: 5%;
+        height: 20%;
+        top: 80%;
     }
     .mensaje-encriptado h2{
         width: 60%;
@@ -278,9 +277,7 @@ h1{
     .encriptado-img{
         width: 50%;
         height: 40%;
-        top: 10;
-        margin: 10px;
-        
+       
     }
     .error-mensaje{
         width: 3%;
@@ -291,12 +288,13 @@ h1{
     .footer{
         width: 100%;
         height: 10%;
+        top: 10%;
         margin: 1.5%;
         padding: 1%;
     } 
-    } 
-/* Responsive design */    
-   @media (max-width: 768px) { 
+}
+    
+@media (max-width: 768px) { 
     .container{
         width: 100%;
         display: flex;
@@ -305,19 +303,20 @@ h1{
     }
     .encriptar{
         width: 100%;
-    } 
-     
+        height: 60%;
+    }   
     h1{
         font-family: 'Inter';
-        font-size: 32px;
+        font-size: 14px;
         color: #000000;
         text-align: center;
+        margin: 2%;
     }
     .texto{
-        width: 80%;
-        height: 40%;
-        left: 1%;
-        top: 5%;
+        width: 90%;
+        height: 50%;
+        margin: 5%;
+    
     }
     .termino{
         width:40%;
@@ -327,19 +326,19 @@ h1{
     .termino p{
         top: 70%;
         left: 1%;
-        margin: 1%;
+        margin: 15%;
         font-size: 16px;
     }
     .botones{
-        width: 80%;
+        width: 60%;
         height: 10%;
-        top: 70%;
+        margin: 1%;
     }
     .btn-encriptar,
     .btn-desencriptar,
     .btn-copia{
         margin: 0.5%;
-        width: 68%;
+        width: 20%;
         border-radius: 16px;
     }
     .btn-encriptar:hover,
@@ -350,20 +349,19 @@ h1{
         padding: 1.8%;
     }
     .encriptado{
-        width: 80%;
-        height: 40%;
-        left: 10%;
-        top: 100%;
+        width: 90%;
+        height: 80%;
+        margin: 15%;
+        left: 1%;
+        top: 150%;
     }
     .mensaje-encriptado{
         width: 100%;
-        top: 5%;
+        height: 90%;
     }
     .encriptado-img{
-        width: 50%;
-        top: 0;
-        display: none;
-        visibility: hidden;
+        width: 30%;
+        height: 20%;
     }
     .error-mensaje{
         width: 3%;
@@ -438,10 +436,9 @@ h1{
         top: 5%;
     }
     .encriptado-img{
-        width: 50%;
-        top: 0;
-        display: none;
-        visibility: hidden;
+        width: 40%;
+        height: 20%;
+        
     }
     .error-mensaje{
         width: 3%;

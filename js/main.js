@@ -5,13 +5,11 @@ function encriptar(){
     let muñeco = document.getElementById("muñeco");
 
     if (hasInvalidCharacters(inputText)){
-        showErrorMessage("Por favor, ingrese solo letras minusculas sin acento.");
+        showErrorMessage("Por favor, ingrese solo letras minusculas.");
         return ;
     } else{
         showErrorMessage("");
-    }
-
-    
+    }   
     let encryptedText = inputText.
     replace(/e/gi,"enter").
     replace(/i/gi,"imes").
@@ -64,7 +62,7 @@ function copyToClipboard(){
     navigator.clipboard.writeText(encryptedText);
     parrafo.textContent = "Copiado al portapapeles";
     document.getElementById("texto").value = "";
-    alert("Texto encriptado copiado al portapapeles");
+    /*alert("Texto encriptado copiado al portapapeles");*/
 }
 
 function hasInvalidCharacters(text){
@@ -78,5 +76,6 @@ function showErrorMessage(mensaje){
 function hideErrorMessage(){
     document.getElementById('error-mensaje').textContent = "";
 }
+
 
 
